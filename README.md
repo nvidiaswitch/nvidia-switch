@@ -25,7 +25,7 @@ After, open the `bus_id` file inside the nvidia-switch directory. The `DEVICE_BU
 card ID. The output must contain a lot of Bus IDs, but the ones that matters
 are the NVIDIA ones, and is displayed similarly as follows
 
-![](lspci_2.png)
+![](https://github.com/nvidiaswitch/nvidia-switch/blob/main/pictures/lspci_2.png)
 
 This way the Bus ID must be `01:00.0`. The correct format must be put similarly to 
 
@@ -40,7 +40,7 @@ to `DEVICE_BUS_ID` format, that is,
 Now, we need to find the Bus ID of the PCI express controller that hosts your NVIDIA graphics
  card with the `lspci -tv`. For example, my `lspci -tv` outputs have the following snippet:
 
-![](lspci.png)
+![](https://github.com/nvidiaswitch/nvidia-switch/blob/main/pictures/lspci.png)
 
 Note that, inside the squares I have the numbers `0000:00:01.0`. This is the NVIDIA
 Graphics card parent in the `lspci -tv` tree, and is the controller that hosts my NVIDIA
