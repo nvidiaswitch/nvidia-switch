@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# When POWERSAVE=1, the NVIDIA GPU is turned off at boot time. Also, it will turn 
+# the card on before attempting to load the modules and render graphics, and turn it 
+# off after the X exits. In order to it work, CONTROLLER_BUS_ID and DEVICE_BUS_ID 
+# must be set correctly. IDs can be found by inspecting the output of lshw, or even 
+# better, lspci -tvv tree.
+
+# Bus ID of the PCI express controller direcly above NVIDIA in the PCI tree,
+# see lspci -tv
+CONTROLLER_BUS_ID=0000:00:01.0
+
+# Bus ID of the NVIDIA graphic card, use lspci | grep VGA
+DEVICE_BUS_ID=0000:01:00.0
+
+# Another NVIDIA device under the PCI express controller (CONTROLLER_BUS_ID) tree
+SUB_DEVICE_BUS_ID=0000:01:00.1
+

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Optimus
+Exec=/bin/bash /opt/nvidia-switch/display_setup.sh
+NoDisplay=true
+X-GNOME-Autostart-Phase=DisplayServer

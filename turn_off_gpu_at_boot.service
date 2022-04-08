@@ -1,0 +1,11 @@
+[Unit]
+Description="Remove Nvidia GPU from kernel."
+
+[Service]
+Type=oneshot
+Environment="POWERSAVE=1"
+ExecStartPre=/bin/bash -c '/usr/local/bin/load_nvidia_modules.sh "unload"'
+ExecStart=/bin/bash -c '/usr/local/bin/gpu_switch.sh "off"'
+
+[Install]
+WantedBy=multi-user.target

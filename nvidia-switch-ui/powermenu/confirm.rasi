@@ -1,0 +1,24 @@
+/* Confirm Dialog */
+
+@import "styles/colors.rasi"
+
+* {
+    background-color:       @background;
+    text-color:             @foreground;
+	font:				 	"FantasqueSansMono Nerd Font 16";
+}
+
+window {
+    width:      			700px;
+    padding:    			50px;
+    border:					1px;
+    border-radius:          0px;
+    border-color:           @border;
+    location:               center;
+    y-offset:               -2em;
+}
+
+entry {
+    expand: 				true;
+    text-color:				@border;
+}

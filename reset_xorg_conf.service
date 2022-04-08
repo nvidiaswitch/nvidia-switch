@@ -1,0 +1,11 @@
+[Unit]
+Description="Reset xorg.conf to default at boot."
+
+[Service]
+Type=oneshot
+ExecStartPre=/bin/bash -c 'echo "" > /opt/nvidia-switch/display_setup.sh'
+ExecStartPre=/bin/bash -c 'rm /etc/X11/xorg.conf'
+ExecStart=/bin/bash -c 'ln -s /opt/nvidia-switch/intel_xorg.conf /etc/X11/xorg.conf'
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+#!/bin/sh
+/bin/bash /opt/nvidia-switch/display_setup.sh
