@@ -3,3 +3,6 @@ nvidia-switch's main purpose will be to disable nvidia in order to
 intel take its place
 2) Make an ui that works in any distribuition
 3) Generalize the idea for amd integrated graphics
+4) it's possible to make it work for LXDM? The link
+https://wiki.gentoo.org/wiki/NVIDIA/Optimus#X_Display_Manager_.28XDM.29
+seems not to work
