@@ -1,2 +1,3 @@
-1) Make an option to make NVIDIA turned on boot, and not INTEL, as well.
+1) Make an option to make NVIDIA turned on boot, and not INTEL
 2) Make an ui that works in any distribuition
+3) Generalize the idea for amd integrated graphics
