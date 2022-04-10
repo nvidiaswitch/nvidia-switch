@@ -6,7 +6,6 @@ This script let all the X configurations to be done by your Display Manager,
 which improves security a bit and let the things more intuitive. Also, it has
  power management features similar to nvidia-xrun.
 
-The nvidia-switch scripts 
 
 # First, set up the Bus ID information
 
