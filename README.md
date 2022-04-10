@@ -50,7 +50,7 @@ device. Hence, the `CONTROLLER_BUS_ID` is given by
 Also, under the same controller we have only two devices, the NVIDIA ones, which 
 confirms that only two devices must be turned off, as the previous steps suggested.
 
-This IDs is used by the systemd service to completely remove the card from the kernel device tree.
+The Bus IDs are used by the systemd service to completely remove the card from the kernel device tree.
 This means that the NVIDIA devices won't even show in lspci output as soon as the laptop is
 turned on, and this will prevent the NVIDIA modules to be loaded, so that we can take advantage 
 of the kernel power management features to keep the card switched off. On the other hand, as soon you need 
