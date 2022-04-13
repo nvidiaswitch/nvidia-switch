@@ -94,7 +94,7 @@ tool to run, you just need to open the terminal and type:
 # On the similarities with nvidia-xrun
 
 This scripts is havely based on [nvidia-xrun](https://github.com/Witko/nvidia-xrun/) ideas, 
-but it has been organized as such it was possible to execute the script without changing TTY. 
+but it has been organized in a way it was possible to execute the script without changing TTY. 
 In summary, this script fixes https://github.com/Witko/nvidia-xrun/issues/4. As such, this 
 script has no warranty, see https://github.com/Witko/nvidia-xrun/blob/master/LICENSE, and follows the 
 same copyright. 
