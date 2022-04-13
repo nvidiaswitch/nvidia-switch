@@ -35,6 +35,8 @@ function uninstall_sddm() { \
 	fi
 }
 
+DISPLAYMANAGER="$(cat /etc/X11/default-display-manager | awk -F"/" '{print $NF}')"
+
 if [[ "$DISPLAYMANAGER" == lightdm* ]]; then
 	uninstall_lightdm
 elif [[ "$DISPLAYMANAGER" == sddm* ]]; then
