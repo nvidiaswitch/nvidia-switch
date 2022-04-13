@@ -21,7 +21,7 @@ First, open therminal and type
 
 After, open the `bus_id` file inside the nvidia-switch directory. The `DEVICE_BUS_ID`
  variable in the `bus_id` file corresponds to the NVIDIA graphics 
-card ID. The output must contain a lot of Bus IDs, but the ones that matters
+card ID. The output of `lspci` must contain a lot of Bus IDs, but the ones that matters
 are the NVIDIA ones, and is displayed similarly as follows
 
 ![](https://github.com/nvidiaswitch/nvidia-switch/blob/main/pictures/lspci_2.png)
