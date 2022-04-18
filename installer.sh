@@ -153,7 +153,7 @@ if [ -f "/etc/debian_version" ]; then
 	fi
 
 	if [ -z "$(grep 'sudo /opt/nvidia-switch/open_nvidia_session.sh &' "/home/$USER_WHO_SUDOED/.xsessionrc")" ]; then
-	echo 'sudo /opt/nvidia-switch/open_nvidia_session.sh &' >> "/home/$USER_WHO_SUDOED/.xsessionrc"
+	echo '/opt/nvidia-switch/open_nvidia_session.sh &' >> "/home/$USER_WHO_SUDOED/.xsessionrc"
 	fi
 else
 	echo "You are not using a Debian-based system."
