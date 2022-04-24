@@ -101,5 +101,5 @@ same copyright.
 
 # Disclosure
 
-I won't spare much time on this repo. This repo was made for my personal use, but since 
+I won't spend much time on this repo. This repo was made for my personal use, but since 
 I find this useful, I am sharing it with everyone.
