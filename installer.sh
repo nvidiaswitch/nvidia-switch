@@ -160,6 +160,11 @@ else
 	echo "You need to add the script /opt/nvidia-switch/open_nvidia_session.sh to run at startup of your user X session."
 fi
 
+# Make a folder in the users home for per user environment variables and add a file to it
+if [ ! -d "/home/$USER/.config/environment.d" ]; then
+	mkdir "/home/$USER/.config/environment.d" && touch "/home/$USER/.config/environment.d/vidaccel.conf"
+fi
+
 # Make a simple systemd service to reset the xorg.conf at boot. This prevents black
 # and flickering screens after the laptop reboots with NVIDIA on.
 sudo cp "/opt/nvidia-switch/reset_xorg_conf.service" "/etc/systemd/system/"
