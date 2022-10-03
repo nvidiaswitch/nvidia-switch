@@ -42,6 +42,12 @@ function turn_on {
 	# It's only used by open_nvidia_session.sh script.
 
 	bash -c 'echo "1" > "/opt/nvidia-switch/USING_NVIDIA"'
+	
+	# Add Nvidia vaapi and vdpau drivers to users environment
+	
+	bash -c 'echo "" > "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
+	bash -c 'echo "LIBVA_DRIVER_NAME=nvidia" >> "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
+	bash -c 'echo "VDPAU_DRIVER=nvidia" >> "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
 }
 
 function turn_off {
@@ -56,6 +62,12 @@ function turn_off {
 	# Inform dusplay manager you will not use nvidia so that you can unload 
 	# nvidia-modules and put your NVIDIA to rest a bit. 
 	sudo bash -c 'echo "0" > "/opt/nvidia-switch/USING_NVIDIA"'
+	
+	# Add Intel vaapi and vdpau drivers to users environment
+	
+	bash -c 'echo "" > "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
+	bash -c 'echo "LIBVA_DRIVER_NAME=iHD" >> "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
+	bash -c 'echo "VDPAU_DRIVER=va_gl" >> "/home/$USER_WHO_SUDOED/.config/envionment.d/vidaccel.conf"'
 }
 
 
