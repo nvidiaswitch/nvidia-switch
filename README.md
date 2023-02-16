@@ -87,8 +87,9 @@ tool to run, you just need to open the terminal and type:
 	
 > Note that using nvidia-switch closes all your applications in your session. 
 > This is done because there is no way of starting a new X session using the display 
-> manager without closing all programs, i.e., in a secure way, without closing your session. 
-> Hence, before using nvidia-switch, please, close all your applications manually. 
+> manager without closing all programs inside your session, i.e., in a secure way, 
+> without closing your session. Hence, before using nvidia-switch, please, close all 
+> your applications manually. 
 
 
 # On the similarities with nvidia-xrun
